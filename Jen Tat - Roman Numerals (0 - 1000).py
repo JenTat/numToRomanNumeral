@@ -105,8 +105,8 @@ def main(num):
         numeral = "M"
     return numeral
 
-userCont = input("To exit enter 'END': ")
-while userCont.lower() != "\'end\'":
+userCont = input("To exit type 'END': \n")
+while userCont.lower() != "end":
     num = input("Please enter the number you want written in Roman numerals.\n")
     while num.isnumeric() == False or int(num) > 1000:
         print("Please enter an integer value below 1000.")
@@ -118,4 +118,5 @@ while userCont.lower() != "\'end\'":
         final = main(num)
     print("Modern number: " + str(num))
     print("Roman numeral: " + str(final))
-    userCont = input("To exit enter 'END'.")
+    userCont = input("To exit type 'END': \n")
+print("The program has ended.")
